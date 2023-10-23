@@ -3,7 +3,7 @@
 // Created on: Oct 22 2023
 //
 
-int BlinkTime = 2000;
+int blinkTime = 2000;
 
 void setup()
 {
@@ -13,7 +13,9 @@ void setup()
 void loop()
 {
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(BlinkTime);
+  delay(blinkTime);
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
+
+  blinkTime = blinkTime + 1000
 }
